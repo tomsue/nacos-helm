@@ -81,7 +81,7 @@ image:
 plugin:
   image:
     registry: docker.io
-    repository: nacos/nacos-peer-finder-plugin
+    repository: minstonehub/nacos-peer-finder-plugin
     tag: latest
     pullPolicy: IfNotPresent
 
@@ -144,6 +144,8 @@ extraEnvVars:
     value: "example"
   - name: NACOS_AUTH_IDENTITY_VALUE
     value: "example"
+  - name: MYSQL_SERVICE_DB_PARAM
+    value: "characterEncoding=utf8&connectTimeout=10000&socketTimeout=30000&autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai&serverTimezone=UTC"
 
 ## @param extraEnvVarsCM ConfigMap with extra environment variables
 ##
